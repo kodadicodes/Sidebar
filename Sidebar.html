@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+
+    <!--icon linki-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 610px;
+            background-color: dodgerblue;
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+            float: left;
+        }
+
+        h1 {
+            cursor: pointer;
+
+        }
+
+        .side {
+            color: gold;
+            transition: all 0.4s;
+        }
+
+        .side:hover {
+            color: white;
+        }
+
+        .side:hover~.bar {
+            color: gold;
+        }
+
+        .menu {
+            margin: 10px 0;
+        }
+
+        .menu li {
+            border-bottom: 2px solid black;
+            padding: 15px 0;
+            cursor: pointer;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu li:hover {
+            background-color: black;
+        }
+
+        .media {
+            height: 35vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .social {
+            transition: all 0.4s;
+            padding: 0 10px;
+            font-size: 27px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .social:hover {
+            color: blue;
+        }
+
+        .title{
+            background-color: rgba(128, 128, 128, 0.411);
+            padding: 5px;
+        }
+        .content{
+            padding: 5px;
+            background-color: rgba(128, 128, 128, 0.233);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar ">
+            <h1><span class="side">Side</span><span class="bar">Bar</span></h1>
+            <ul class="menu">
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Pörtföy</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">İletişim</a></li>
+                <li><a href="#">Harita</a></li>
+            </ul>
+            <div class="media">
+                <div class="social"><i class="fa-brands fa-square-facebook"></i></div>
+                <div class="social"><i class="fa-brands fa-square-instagram"></i></div>
+                <div class="social"><i class="fa-brands fa-square-twitter"></i></div>
+            </div>
+        </div>
+        <main>
+            <p class="title">Lorem, ipsum dolor.</p>
+            <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil error, aliquid harum cumque illo. Possimus soluta facilis quo? Minima, voluptatem. Repellendus earum doloribus incidunt sint debitis cum, sequi quibusdam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatum corporis voluptas repellendus consectetur autem fugiat nemo? Ea reiciendis tempora asperiores, eligendi sed non ab perferendis dignissimos iste, neque eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quisquam suscipit excepturi sed illo, distinctio esse totam laborum optio, facere, ducimus id molestiae commodi quis? Temporibus commodi aspernatur quae quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid quasi odit aperiam. Reprehenderit saepe nostrum harum ipsam, magni incidunt praesentium blanditiis perferendis neque placeat ratione voluptate vitae quasi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, illum vitae dolor modi mollitia qui numquam, hic, iure ducimus soluta veniam quibusdam quasi enim exercitationem voluptatibus repudiandae quia aliquid maiores? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, cupiditate a? Vitae culpa obcaecati sit, hic iusto, ea ad totam quam dolorem sequi provident ut! Expedita accusantium officia ratione voluptatem!</p>
+        </main>
+    </div>
+
+</body>
+
+</html>
